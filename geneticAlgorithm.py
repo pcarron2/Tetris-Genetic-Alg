@@ -79,15 +79,15 @@ class GenAlgTuner:
 		return weightList[:]
 
 
-'''
-	callBotBattle creates a shell script that creates two instances of the blockBattle engine and
-	assigns random weights to each bot to compete against eachother. This function creates a new file and executes
-	the script each time it is run.
 
-'''
 			
 
 	def callBotBattle(self, arglist1={'ah':-.5,'cl':1,'h':-.9,'bump':-.3,'c2o':2,'c4o':1},arglist2={'ah':-.5,'cl':1,'h':-.9,'bump':-.3,'c2o':2,'c4o':1}):
+	'''
+	callBotBattle creates a shell script that creates two instances of the blockBattle engine and
+	assigns random weights to each bot to compete against eachother. This function creates a new file and executes
+	the script each time it is run.
+	'''
 		script=open("runScript.sh",'w+')
 		callString='#!/bin/sh'
 		callString=callString+'\n'
